@@ -1,6 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedor_newActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".NewActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout_interno"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Factura"
+            android:textSize="20dp"
+            android:padding="20dp"
+            android:textColor=" #1e208a"/>
+"
+
+        <TextView
+            android:id="@+id/nTV_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario:"
+            android:layout_marginLeft="10dp"
+            android:padding="15dp"
+            android:textColor="@color/color_textView"/>
+
+        <TextView
+            android:id="@+id/nTV_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo Electrónico:"
+            android:layout_marginLeft="10dp"
+            android:padding="15dp"
+            android:textColor="@color/color_textView"/>
+
+        <TextView
+            android:id="@+id/nTV_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total de productos:"
+            android:layout_marginLeft="10dp"
+            android:padding="15dp"
+            android:textColor="@color/color_textView"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detalles del producto"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:padding="15dp"
+            android:textColor="#1e208a"/>
+
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/NgridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+        <TextView
+            android:id="@+id/textview_01"
+            android:layout_width="@dimen/standard_width"
+            android:layout_height="@dimen/standard_height"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@color/color_button_01"
+            android:padding="2dp"
+            android:text="Producto 1"/>
+
+        <TextView
+            android:id="@+id/textview_02"
+            android:layout_width="@dimen/standard_width"
+            android:layout_height="@dimen/standard_height"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:background="@color/color_button_02"
+            android:padding="2dp"
+            android:text="Producto 2" />
+
+        <TextView
+            android:id="@+id/textview_03"
+            android:layout_width="@dimen/standard_width"
+            android:layout_height="@dimen/standard_height"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:background="@color/color_button_03"
+            android:padding="2dp"
+            android:text="Producto 3"/>
+
+        <TextView
+            android:id="@+id/textview_04"
+            android:layout_width="@dimen/standard_width"
+            android:layout_height="@dimen/standard_height"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:background="@color/color_button_04"
+            android:padding="2dp"
+            android:text="Producto 4"/>
+
+        <Button
+            android:id="@+id/button_05"
+            android:layout_width="@dimen/standard_width"
+            android:layout_height="@dimen/standard_height"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@color/color_button_05"
+            android:padding="2dp"
+            android:text="Producto 5" />
+
+        <Button
+            android:id="@+id/button_06"
+            android:layout_width="@dimen/standard_width"
+            android:layout_height="@dimen/standard_height"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:background="@color/color_button_06"
+            android:padding="2dp"
+            android:text="Click" />
+
+        <Button
+            android:id="@+id/button_07"
+            android:layout_width="@dimen/standard_width"
+            android:layout_height="@dimen/standard_height"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="@color/color_button_07"
+            android:padding="2dp"
+            android:text="Click" />
+
+        <Button
+            android:id="@+id/button_08"
+            android:layout_width="@dimen/standard_width"
+            android:layout_height="@dimen/standard_height"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:background="@color/color_button_08"
+            android:padding="2dp"
+            android:text="Click" />
+
+        <Button
+            android:id="@+id/button_09"
+            android:layout_width="@dimen/standard_width"
+            android:layout_height="@dimen/standard_height"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:background="@color/color_button_09"
+            android:padding="2dp"
+            android:text="Click" />
+
+    </GridLayout>
+
+</LinearLayout>
