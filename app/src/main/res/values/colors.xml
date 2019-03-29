@@ -12,4 +12,5 @@
     <color name="color_button_07"> #24f8e3</color>
     <color name="color_button_08">#FA8072</color>
     <color name="color_button_09"> #1e8449</color>
+    <color name="color_textView"> #090909 </color>
 </resources>
